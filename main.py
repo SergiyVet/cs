@@ -10,7 +10,11 @@ CHAT_ID = os.getenv("CHAT_ID")
 prn = 89
 zns = 0.04
 
-html = requests.get(URL, headers={"User-Agent": "Mozilla/5.0"}).text
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36",
+    "Accept-Language": "en-US,en;q=0.9",
+}
+html = requests.get(URL, headers=headers).text
 html = html.replace("\xa0", " ")
 
 wear_matches = re.findall(
