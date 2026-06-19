@@ -7,7 +7,7 @@ URL = "https://steamcommunity.com/market/listings/730/G183F20AB093004?appid=730&
 BOT_TOKEN = os.getenv("BOT_TOKEN")
 CHAT_ID = os.getenv("CHAT_ID")
 
-prn = 90
+prn = 89
 zns = 0.04
 
 html = requests.get(URL, headers={"User-Agent": "Mozilla/5.0"}).text
