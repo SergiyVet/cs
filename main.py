@@ -25,7 +25,8 @@ price_matches = re.findall(
 )
 
 print("\n🔄 Перевірка...")
-
+print(price_matches)
+print(wear_matches)
 min_len = min(len(price_matches), len(wear_matches))
 
 found = False
